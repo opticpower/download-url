@@ -11,6 +11,8 @@ function getDistro() {
         case 'Ubuntu':
             var version = distroInfo.distroVersion.replace('.', '') || '1604';
             return 'ubuntu' + version;
+        case 'Debian':
+            return 'debian92'; //todo: support more debian versions.
         default:
             return '';
     }
